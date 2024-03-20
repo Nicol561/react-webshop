@@ -1,0 +1,63 @@
+footer {
+  width: 100%;
+  position: sticky;
+  bottom: 0;
+  background-color: #707478;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  display: flex;
+
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5px;
+}
+.naslov {
+  padding-top: 20px;
+}
+
+ul li {
+  list-style-type: none;
+
+  font-size: 16px;
+  color: #f1f1f1;
+}
+a:link {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+a:visited {
+  color: #f1f1f1;
+}
+
+a:hover {
+  color: #fee715;
+}
+a:active {
+  color: #fee715;
+}
+.navigation,
+.contact,
+.info,
+.lokacija {
+  padding: 10px;
+  color: #242121;
+}
+h4 {
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: #fee715;
+}
+.potpis p {
+  color: #fee715;
+  display: flex;
+  justify-content: center;
+}
+li {
+  padding: 1px;
+}

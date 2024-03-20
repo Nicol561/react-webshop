@@ -1,0 +1,83 @@
+header {
+  background-color: #707478;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.nav_1 li,
+.nav_2 li {
+  list-style-type: none;
+  color: #fee715;
+
+  font-size: 25px;
+  padding: 10px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+a:visited {
+  color: #f1f1f1;
+}
+a:hover {
+  color: #fee715;
+}
+a:active {
+  color: #fee715;
+}
+
+.nav_1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  border-bottom: #707478 0.5px solid;
+}
+.nav_2 li a {
+  color: #2a3844;
+}
+.logo {
+  font-size: 50px;
+  color: #fee715;
+}
+
+form.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: none;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+}
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2a3844;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #707478;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.active {
+  border-bottom: #707478 2px solid;
+}
