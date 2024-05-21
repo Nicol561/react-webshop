@@ -6,7 +6,9 @@ import AppWrapperComponent from "./components/AppWrapper/AppWrapperComponent";
 import Product from "./components/Product/Product";
 import SingleProduct from "./components/Product/SingleProduct";
 import Home from "./components/Home/Home";
-//import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 import ProductList from "./components/Product/ProductList";
 import Contact from "./components/Contact/Contact";
 import About from "./components/About/About";
@@ -23,6 +25,7 @@ import Terms from "./components/Informaition/Terms";
 import Cookies from "./components/Informaition/Cookies";
 import Faq from "./components/Informaition/Faq";
 import Privacy from "./components/Informaition/Privacy";
+import Cart2 from "./components/Cart/Cart2";
 
 function App() {
   return (
@@ -48,6 +51,7 @@ function App() {
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/cookies" element={<Cookies />} />
+            <Route path="/cart2" element={<Cart2 />} />
 
             <Route path="/product" element={<Product />}>
               <Route index element={<ProductList />} />

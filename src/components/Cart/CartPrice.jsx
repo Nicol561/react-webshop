@@ -1,20 +1,31 @@
 import { Link } from "react-router-dom";
 function CartPrice() {
+  const delivery = 5;
+
   return (
     <div className="total-price">
       <table>
         <tbody>
           <tr>
             <td>Subtotal</td>
-            <td>€ 43,07</td>
+            <td>
+              {" "}
+              $ {cartItems.reduce((amount, item) => item.price + amount, 0)}
+            </td>
           </tr>
           <tr>
             <td>Delivery</td>
-            <td>€ 4,99</td>
+            <td>$ {delivery}</td>
           </tr>
           <tr>
             <td>Total</td>
-            <td>€ 48,06</td>
+            <td>
+              ${" "}
+              {cartItems.reduce(
+                (amount, item) => item.price + amount + delivery,
+                0
+              )}
+            </td>
           </tr>
           <tr>
             <td>

@@ -1,4 +1,7 @@
-function CartInfo() {
+import { useContext } from "react";
+import CartContext from "./CartContext";
+function CartInfo({ item }) {
+  const { removeItem } = useContext(CartContext);
   return (
     <table>
       <tbody>
@@ -10,62 +13,24 @@ function CartInfo() {
         <tr>
           <td>
             <div className="cart-info">
-              <img
-                src="images/picture_products/product-kawaii.avif"
-                alt="Artisan"
-              />
+              <img src={item.image} alt={item.title} />
               <div>
-                <p>How to Draw Cute Kawaii in Simple Steps by Yishan Li</p>
-                <small>Price: € 12,99 </small>
+                <p>{item.title.substring(0, 12)}</p>
+                <small>Price: $ {item.price}</small>
                 <br />
-                <a href="">Remove</a>
+                <button
+                  className="CartItem__button"
+                  onClick={() => removeItem(item.id)}
+                >
+                  Remove
+                </button>
               </div>
             </div>
           </td>
           <td>
             <input type="number" defaultValue={1} />
           </td>
-          <td> € 12,99</td>
-        </tr>
-        <tr>
-          <td>
-            <div className="cart-info">
-              <img
-                src="./images/picture_products/product-oilpastels.avif"
-                alt="Royal"
-              />
-              <div>
-                <p>Sennelier Oil Pastel 12 Stick Introduction Set</p>
-                <small>Price: € 21,22 </small>
-                <br />
-                <a href="">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" defaultValue={1} />
-          </td>
-          <td>€ 21,22</td>
-        </tr>
-        <tr>
-          <td>
-            <div className="cart-info">
-              <img
-                src="./images/picture_products/product-niram.avif"
-                alt="Artisan"
-              />
-              <div>
-                <p>Nitram Petits Batons Round Charcoal Sticks 5 x 6mm</p>
-                <small>Price: € 8,86</small>
-                <br />
-                <a href="">Remove</a>
-              </div>
-            </div>
-          </td>
-          <td>
-            <input type="number" defaultValue={1} />
-          </td>
-          <td> € 8,86</td>
+          <td> {item.price}</td>
         </tr>
       </tbody>
     </table>

@@ -1,0 +1,11 @@
+.custom-caption {
+  position: absolute;
+  top: 40%; /* Adjust top position as needed */
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  text-align: center; /* Adjust text alignment as needed */
+}
+.carousel-main {
+  font-family: "Montserrat", sans-serif;
+}

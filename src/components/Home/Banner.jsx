@@ -1,24 +1,45 @@
+import Carousel from "react-bootstrap/Carousel";
+import "./Banner.css";
 function Banner() {
   return (
-    <div className="image-container">
-      <img
-        src="https://placehold.co/1300x550"
-        alt="pribor za crtanje"
-        title="banner"
-        width="100%"
-      />
-      <div className="text-container">
-        Welcome to MyArt
-        <i className="fa-solid fa-palette" /> web-shop
-        <p>
-          When it comes to purchasing art supplies online, we understand that
-          you want the best quality at affordable prices. That is why we pride
-          ourselves on being one of the leading online art painting stores,
-          offering a wide range of art supplies that are sure to bring your
-          paintings to life.
-        </p>
-      </div>
-    </div>
+    <Carousel className="carousel-main">
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://images.pexels.com/photos/7081136/pexels-photo-7081136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="First slide"
+        />
+        <Carousel.Caption className="custom-caption">
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://images.pexels.com/photos/8387838/pexels-photo-8387838.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="First slide"
+        />
+
+        <Carousel.Caption className="custom-caption">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={2000}>
+        <img
+          className="d-block w-100"
+          src="https://images.pexels.com/photos/8307678/pexels-photo-8307678.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+          alt="First slide"
+        />
+        <Carousel.Caption className="custom-caption">
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
 

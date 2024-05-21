@@ -1,13 +1,14 @@
 import Banner from "./Banner";
-import PopularProducts from "./PopularProducts";
 import ProductList from "../Product/ProductList";
+import Accordion from "./Accordion";
+import faqs from "../data/AccordionData";
 
 function Home() {
   return (
     <main>
       <Banner />
-      <PopularProducts />
       <ProductList />
+      <Accordion data={faqs} />
     </main>
   );
 }

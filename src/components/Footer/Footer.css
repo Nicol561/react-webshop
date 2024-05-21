@@ -1,63 +1,22 @@
-footer {
-  width: 100%;
-  position: sticky;
-  bottom: 0;
-  background-color: #707478;
+.footer {
+  background-color: black;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
-
-body {
-  position: relative;
+.nav-link {
+  color: white;
 }
-
-.container {
-  display: flex;
-
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 5px;
+.nav-item.mb-2 .nav-link.link-f-color {
+  color: white;
 }
-.naslov {
-  padding-top: 20px;
+.nav-item.mb-2 .nav-link.link-f-color:hover {
+  color: black;
 }
-
-ul li {
-  list-style-type: none;
-
-  font-size: 16px;
-  color: #f1f1f1;
+a .fa-brands,
+.fa-solid {
+  color: white;
+  font-size: 25px;
 }
-a:link {
-  text-decoration: none;
-  color: #f1f1f1;
-}
-a:visited {
-  color: #f1f1f1;
-}
-
-a:hover {
-  color: #fee715;
-}
-a:active {
-  color: #fee715;
-}
-.navigation,
-.contact,
-.info,
-.lokacija {
-  padding: 10px;
-  color: #242121;
-}
-h4 {
-  padding-bottom: 5px;
-  font-size: 20px;
-  color: #fee715;
-}
-.potpis p {
-  color: #fee715;
-  display: flex;
-  justify-content: center;
-}
-li {
-  padding: 1px;
+.news {
+  font-size: 12px;
 }
