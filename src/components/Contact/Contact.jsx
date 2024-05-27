@@ -2,6 +2,7 @@ import Form from "./Form";
 import MailPhone from "./Mail&Phone";
 import Newsletter from "./Newsletter";
 import SocialMedia from "./SocialMedia";
+import "./contact.css";
 function Contact() {
   return (
     <main>

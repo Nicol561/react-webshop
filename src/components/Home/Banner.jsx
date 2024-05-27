@@ -10,8 +10,9 @@ function Banner() {
           alt="First slide"
         />
         <Carousel.Caption className="custom-caption">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h2>
+            Discover the Latest Fashion Trends – Shop Our New Arrivals Now!
+          </h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -22,8 +23,7 @@ function Banner() {
         />
 
         <Carousel.Caption className="custom-caption">
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h2>Elevate Your Wardrobe with Our Chic and Timeless Pieces</h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={2000}>
@@ -33,10 +33,7 @@ function Banner() {
           alt="First slide"
         />
         <Carousel.Caption className="custom-caption">
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h2>Find Your Perfect Outfit – From Casual Comfort to Office Chic</h2>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

@@ -11,7 +11,6 @@ function About() {
       </div>
       <div className="newsletter-form2">
         <AbtForm />
-        <Socials />
       </div>
     </main>
   );

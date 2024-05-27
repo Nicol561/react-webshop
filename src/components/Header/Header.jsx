@@ -142,12 +142,6 @@ function Header() {
                   Products
                 </NavLink>
               </li>
-
-              <li className="nav-item color">
-                <NavLink className="nav-link" to="/blog">
-                  Blog
-                </NavLink>
-              </li>
             </ul>
           </div>
         </div>

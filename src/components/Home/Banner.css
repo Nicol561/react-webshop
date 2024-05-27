@@ -1,11 +1,23 @@
 .custom-caption {
   position: absolute;
-  top: 40%; /* Adjust top position as needed */
+  top: 60%;
   transform: translateY(-50%);
   left: 0;
   right: 0;
-  text-align: center; /* Adjust text alignment as needed */
+  text-align: center;
 }
 .carousel-main {
   font-family: "Montserrat", sans-serif;
+}
+
+.carousel-main .carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.custom-caption h2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
 }

@@ -2,10 +2,11 @@ function BlogCard() {
   return (
     <aside>
       <div className="blog-card">
-        <h2>Which Is The Whitest White Pencil?</h2>
+        <h4> Wardrobe Staples Every Woman Needs</h4>
         <p>
-          I don't know about you but as a mixed media artist I'm continually on
-          the search for the best white pens, acrylic markers and pencils
+          Certain pieces remain stylish through the ever-changing world of
+          fashion. This article highlights the timeless wardrobe staples every
+          woman needs.
         </p>
         <div className="author">
           <img
@@ -21,11 +22,10 @@ function BlogCard() {
         </div>
       </div>
       <div className="blog-card">
-        <h2>Colour Theory to Improve Your Paintings</h2>
+        <h4>Mastering The Art Of Fashion Layering</h4>
         <p>
-          Colour theory is an almost endless area of research that can feel a
-          little daunting, especially if you are only beginning on your creative
-          journey
+          Layering can transform your outfits from simple to sophisticated,
+          making it a key skill for any fashion enthusiast.
         </p>
         <div className="author">
           <img
